@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+        .container {
+            display:grid;
+           grid-template-columns: repeat(3,1fr);
+           grid-template-rows: repeat(2,250px);
+           gap:10px;
+           padding:10px;
+
+        }
+        .hleft {
+           grid-column-start: 1;
+           grid-column-end: 3;
+           grid-row-start: 1;
+           grid-row-end:2;
+        }
+        .hright {
+            grid-column-start: 3;
+            grid-column-end: 5;
+            grid-row-start: 1;
+            grid-row-end:2;
+        }
+        .fleft {
+            grid-column-start: 1;
+            grid-column-end: 2;
+            grid-row-start:2 ;
+            grid-row-end: 3;
+
+        }
+        .fmiddle {
+            grid-column-start:2;
+            grid-column-end: 3;
+            grid-row-start:2;
+            grid-row-end:3;
+           
+        }
+        .fright {
+            grid-column-start: 3;
+            grid-column-end: 4;
+            grid-row-start:2;
+            grid-row-end:3;
+           
+        }
+        img {
+            height:100%;
+            width:100%;
+            border-radius: 10px;
+        }
+</style>
+<body>
+    <div class="container">
+        <div class="hleft"><img src="g1.jpeg" alt=""></div>
+        <div class="hright"><img src="g2.jpeg" alt=""></div>
+        <div class="fleft"><img src="g3.jpeg" alt=""></div>
+        <div class="fmiddle"><img src="g4.jpeg" alt=""></div>
+        <div class="fright"><img src="g5.jpeg" alt=""></div>
+    </div>
+</body>
+</html>
